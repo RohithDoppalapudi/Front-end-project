@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            color: white;
+            background: #0c0c0c;
+        }
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+            background-size: cover;
+            background-position: center;
+        }
+        #home {
+            background: url("portfoliopic1.jpg") no-repeat center center/cover;
+        }
+        #projects {
+            background: url("projects-bg.jpg") no-repeat center center/cover;
+        }
+        #skills {
+            background: url("skills-bg.jpg") no-repeat center center/cover;
+        }
+        #certifications {
+            background: url("certifications-bg.jpg") no-repeat center center/cover;
+        }
+        #contact {
+            background: url("contact-bg.jpg") no-repeat center center/cover;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #ff4c68;
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff1e50;
+        }
+        .social-icons {
+            margin-top: 15px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ff4c68;
+        }
+        .home-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="skill.html">Skills</a>
+            <a href="certification.html">Certifications</a>
+            <a href="about.html">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div>
+            <img src="user.png" alt="Profile Image" class="home-image">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Showcasing my skills, projects, and achievements.</p>
+            <a href="project.html" class="btn">View Projects</a>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects" class="section">
+        <div>
+            <h1>My Projects</h1>
+            <p>A collection of my latest work, including web applications, AI models, and more.</p>
+            <a href="project.html" class="btn">Explore Projects</a>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div>
+            <h1>My Skills</h1>
+            <p>Proficient in full-stack development, cloud computing, and data science.</p>
+            <a href="skill.html" class="btn">See More</a>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div>
+            <h1>Certifications</h1>
+            <p>Recognized for various technical achievements and courses.</p>
+            <a href="certification.html" class="btn">View Certifications</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div>
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out for collaborations or any inquiries.</p>
+            <a href="mailto:youremail@example.com" class="btn">Email Me</a>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Your Name | All Rights Reserved
+    </footer>
+
+</body>
+</html>

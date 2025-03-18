@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body {
+            background: url("portfoliopic2.jpeg") no-repeat center center/cover;
+            color: rgb(236, 231, 231);
+            height: 170vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        nav {
+            width: 100%; position: fixed; top: 0;
+            display: flex; justify-content: space-between;
+            align-items: center; padding: 15px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        .nav-links { display: flex; gap: 15px; }
+        .nav-links a {
+            color: white; text-decoration: none;
+            font-size: 1.2rem; padding: 10px 15px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover { text-decoration: underline; }
+        .projects-container { margin-top: 80px; width: 80%; }
+        .project {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px; border-radius: 10px;
+            margin: 20px 0;
+            transition: 0.3s;
+        }
+        .project:hover { background: rgba(0, 0, 0, 0.9); }
+        .project img {
+            width: 100%; max-width: 400px; 
+            border-radius: 10px; margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Projects</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="skill.html">Skills</a>
+            <a href="certification.html">Certifications</a>
+            <a href="about.html">Contact Details</a>
+        </div>
+    </nav>
+
+    <div class="projects-container">
+        <h1 data-aos="fade-up">My Projects</h1>
+
+        <div class="project" data-aos="fade-up" data-aos-delay="200">
+            <h2>Noisy Data Management in Environmental Monitoring</h2>
+            <img src="p1.jpg" alt="Noisy Data Management">
+            <p>A data science project focused on handling and analyzing noisy environmental data for better decision-making.</p>
+        </div>
+
+        <div class="project" data-aos="fade-up" data-aos-delay="300">
+            <h2>Dynamic Disaster Response Predictor</h2>
+            <img src="p2.jpg" alt="Disaster Response Predictor">
+            <p>An AI-driven system that predicts disaster response actions based on real-time data.</p>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.opacity = "1";
+            AOS.init();
+        });
+    </script>
+</body>
+</html>
